@@ -9,23 +9,19 @@ import pe.edu.pe.galaxy.training.java.sb.ms.gestion.instructores.dto.generic.Gen
 
 
 
-
 @SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@EqualsAndHashCode(callSuper = false)
-public class TipoDocumentoDTO extends GenericDTO {
+@EqualsAndHashCode(callSuper=false)
+public class TipoDocumentoDTO  extends GenericDTO{
 
+	private static final long serialVersionUID = 1L;
+
+	private String tipo;
 	
-private static final long serialVersionUID = 1L;
-private String tipo;
-private String descripcionLarga;
-private String descripcionCorta;
-	
-	
-	
-	
-	
-	
+	private String descripcionLarga;
+
+	private String descripcionCorta;
+
 }
