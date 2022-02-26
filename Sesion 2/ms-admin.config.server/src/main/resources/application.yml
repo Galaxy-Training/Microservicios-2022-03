@@ -1,0 +1,31 @@
+
+server:
+  port: 8888
+
+spring:
+  application:
+    name: ms-admin-config-server
+    
+#Configuracion Local
+
+  profiles:
+    active: native
+    
+  cloud:
+    config:
+      server: 
+        native:
+          searchLocations: file:///D:/Workspace Galaxy Training 2022/ms-gestion-config-data
+          
+  
+
+#Configuracion Cloud (git)
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/GalaxyTraining/MS-01-2021.git
+#          searchPaths: ms-gestion-config-data
+#          username: ${USER_NAME}
+#          password: ${USER_PASSWORD}
+#         cloneOnStart: true

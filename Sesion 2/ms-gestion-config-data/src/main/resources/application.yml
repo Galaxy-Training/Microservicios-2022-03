@@ -1,0 +1,15 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /ms-instructor
+    
+  error:
+    include-details: always
+    
+# Oracle settings
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: oracle
+    password: oracle
+    driver-class-name: oracle.jdbc.driver.OracleDriver
