@@ -1,0 +1,285 @@
+{
+	"info": {
+		"_postman_id": "c7815b84-809c-4eaa-8c38-02f32930710b",
+		"name": "MS-02-2021-v2-21.07",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Business",
+			"item": [
+				{
+					"name": "ms-instructor",
+					"item": [
+						{
+							"name": "Tipo-Documentos",
+							"item": [
+								{
+									"name": "http://localhost:8081/tipo-documentos",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8081/tipo-documentos",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8081",
+											"path": [
+												"tipo-documentos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:8081/tipo-documentos/1",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8081/tipo-documentos/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8081",
+											"path": [
+												"tipo-documentos",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Instructores",
+							"item": [
+								{
+									"name": "http://localhost:8081/instructores",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8081/instructores",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8081",
+											"path": [
+												"instructores"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:8081/instructores",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "        {\r\n            \"apellidoPaterno\": \"N\",\r\n            \"apellidoMaterno\": \"AR\",\r\n            \"nombres\": \"AR\",\r\n            \"sexo\": \"M\",\r\n            \"tipoDocumento\": {\r\n                \"id\": 1\r\n            },\r\n            \"nroDocumento\": \"10611698\",\r\n            \"correo\": \"micorreoxx.com\",\r\n            \"telefono\": null,\r\n            \"fechaIngreso\": null,\r\n            \"estado\": \"1\"\r\n        }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8081/instructores",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8081",
+											"path": [
+												"instructores"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "ms-talleres",
+					"item": [
+						{
+							"name": "http://localhost:8082/talleres",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "New Folder",
+					"item": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Server-Config",
+					"item": [
+						{
+							"name": "http://localhost:8888/actuator/health",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8888/actuator/health",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"actuator",
+										"health"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8888/ms-gestion-instructores/default",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8888/ms-gestion-instructores/default",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"ms-gestion-instructores",
+										"default"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8888/ms-admin-registry-server/default",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8888/ms-admin-registry-server/default",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"ms-admin-registry-server",
+										"default"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "API Gateway",
+					"item": [
+						{
+							"name": "External-albums",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8887/actuator",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8887/actuator",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8887",
+									"path": [
+										"actuator"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8887/albums",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8887/albums",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8887",
+									"path": [
+										"albums"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8887/ms-instructor/instructores/",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8887/ms-instructor/instructores/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8887",
+									"path": [
+										"ms-instructor",
+										"instructores",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8887/ms-instructor/tipo-documentos/",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

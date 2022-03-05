@@ -1,0 +1,555 @@
+{
+	"info": {
+		"_postman_id": "d5005c51-b10f-4fb0-80d8-99e3c5152e69",
+		"name": "MS-01-2021",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "MS-Config-Server",
+					"item": [
+						{
+							"name": "actuator/health",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8888/actuator/health",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"actuator",
+										"health"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8888/ms-gestion-instructor/default",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8888/ms-gestion-instructor/default",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"ms-gestion-instructor",
+										"default"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8888/ms-admin-registry-server/default",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8888/ms-admin-registry-server/default",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"ms-admin-registry-server",
+										"default"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8888/ms-admin-api-gateway/default",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8888/ms-admin-api-gateway/default",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"ms-admin-api-gateway",
+										"default"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8888/ms-gestion-taller/default",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8888/ms-admin-api-gateway/default",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8888",
+									"path": [
+										"ms-admin-api-gateway",
+										"default"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "MS-Registry-Server",
+					"item": [
+						{
+							"name": "http://localhost:8889/actuator/health",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8889/actuator/health",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8889",
+									"path": [
+										"actuator",
+										"health"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "MS-API Gateway",
+					"item": [
+						{
+							"name": "http://localhost:8887/albums",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8887/albums",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8887",
+									"path": [
+										"albums"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8887/actuator/gateway/routes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8887/actuator/gateway/routes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8887",
+									"path": [
+										"actuator",
+										"gateway",
+										"routes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8887/actuator",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8887/ms-instructor/instructores",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8887/ms-instructor/instructores",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8887",
+									"path": [
+										"ms-instructor",
+										"instructores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8887/ms-gestion-instructor/instructores",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8887/ms-gestion-instructor/instructores",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8887",
+									"path": [
+										"ms-gestion-instructor",
+										"instructores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://jsonplaceholder.typicode.com/albums",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Business",
+			"item": [
+				{
+					"name": "MS-Alumnos",
+					"item": [
+						{
+							"name": "http://localhost:8085/ms-alumno/alumnos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/ms-alumno/alumnos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"ms-alumno",
+										"alumnos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8085/ms-alumno/tipo-documentos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/ms-alumno/tipo-documentos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"ms-alumno",
+										"tipo-documentos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "MS-Instructores",
+					"item": [
+						{
+							"name": "http://localhost:8084/tipo-documentos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/tipo-documentos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"tipo-documentos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8084/instructores",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/instructores",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"instructores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8084/instructores/1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/instructores/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"instructores",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8084/ms-instructor/instructores",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n            \"id\": 1,\r\n            \"apellidoPaterno\": \"TORRES\",\r\n            \"apellidoMaterno\": \"GALVEZ\",\r\n            \"nombres\": \"MARIA\",\r\n            \"sexo\": \"F\",\r\n            \"tipoDocumento\": {\r\n                \"id\": 2\r\n            },\r\n            \"nroDocumento\": \"10611608\",\r\n            \"correo\": \"GCASTILLO@GMAIL.COM\",\r\n            \"telefono\": null,\r\n            \"fechaIngreso\": null,\r\n            \"estado\": \"1\"\r\n        }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8084/ms-instructor/instructores",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"ms-instructor",
+										"instructores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8084/ms-instructor/instructores",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n            \"apellidoPaterno\": \"TO dfsdfd\",\r\n            \"apellidoMaterno\": \"GALVEZ\",\r\n            \"nombres\": \"MAdfsdff\",\r\n            \"sexo\": \"F\",\r\n            \"tipoDocumento\": {\r\n                \"id\": 2\r\n            },\r\n            \"nroDocumento\": \"10611607\",\r\n            \"correo\": \"GCASTILLO@GMAIL.COM\",\r\n            \"telefono\": null,\r\n            \"fechaIngreso\": null,\r\n            \"estado\": \"1\"\r\n        }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8084/ms-instructor/instructores",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"ms-instructor",
+										"instructores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8084/ms-instructor/instructores",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8084/ms-instructor/instructores/15",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"ms-instructor",
+										"instructores",
+										"15"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://ARISTEDES:8084/instructores/1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "MS-Talleres",
+					"item": [
+						{
+							"name": "http://localhost:8085/ms-talleres/talleres",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8085/ms-talleres/talleres",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8085",
+									"path": [
+										"ms-talleres",
+										"talleres"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8083/talleres/1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/ms-talleres/talleres/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"ms-talleres",
+										"talleres",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "OPS",
+			"item": [
+				{
+					"name": "actuator",
+					"item": [
+						{
+							"name": "http://localhost:8084/ms-instructor/actuator/",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/ms-instructor/actuator/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"ms-instructor",
+										"actuator",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:8084/ms-instructor/actuator/prometheus",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/ms-instructor/actuator/prometheus",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"ms-instructor",
+										"actuator",
+										"prometheus"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
